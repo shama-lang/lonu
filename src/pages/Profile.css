@@ -1,0 +1,367 @@
+.profile-page {
+  background: var(--bg-light);
+  min-height: calc(100vh - 64px);
+  padding: 2rem 1.5rem;
+}
+
+.profile-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* Sidebar */
+.profile-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: sticky;
+  top: 84px;
+}
+
+.avatar-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.profile-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 0.25rem;
+}
+
+.student-id {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: monospace;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.pstat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.pstat-val {
+  font-weight: 800;
+  color: var(--navy);
+  font-size: 1rem;
+}
+
+.pstat-lbl {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.profile-verse-card {
+  background: linear-gradient(135deg, var(--navy), #1a3a5c);
+  color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 1.25rem;
+  font-style: italic;
+  font-size: 0.83rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.verse-cross {
+  font-size: 1.5rem;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.profile-verse-card p {
+  margin: 0 0 0.5rem;
+}
+
+.profile-verse-card cite {
+  font-size: 0.78rem;
+  color: var(--gold);
+  font-style: normal;
+}
+
+/* Main */
+.profile-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  margin-bottom: 1.25rem;
+}
+
+.profile-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.profile-section-header h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+}
+
+.edit-btn {
+  padding: 0.35rem 0.9rem;
+  background: transparent;
+  border: 1.5px solid var(--navy);
+  color: var(--navy);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.edit-btn:hover {
+  background: var(--navy);
+  color: #fff;
+}
+
+/* Info List */
+.info-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.info-item-full {
+  grid-column: 1 / -1;
+}
+
+.info-list dt {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.info-list dd {
+  font-size: 0.95rem;
+  color: var(--text);
+  font-weight: 500;
+  margin: 0;
+}
+
+.info-list code {
+  font-family: monospace;
+  color: var(--navy);
+  font-size: 0.9rem;
+}
+
+/* Edit Form */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-group label {
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.6rem 0.85rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--text);
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--navy);
+}
+
+.edit-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.save-btn {
+  padding: 0.6rem 1.5rem;
+  background: var(--navy);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.15s;
+}
+
+.save-btn:hover {
+  background: var(--navy-dark);
+}
+
+.cancel-btn {
+  padding: 0.6rem 1.25rem;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Save Notice */
+.save-notice {
+  background: #dcfce7;
+  color: #166534;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Enrolled list */
+.enrolled-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.enrolled-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.enrolled-item:last-child {
+  border-bottom: none;
+}
+
+.enrolled-item > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.enrolled-meta {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.enrolled-credits {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.no-programs {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Type pills */
+.type-pill {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.type-pill.certificate {
+  background: rgba(245, 196, 60, 0.15);
+  color: #8a6d00;
+}
+
+.type-pill.degree {
+  background: rgba(30, 58, 95, 0.1);
+  color: var(--navy);
+}
+
+@media (max-width: 768px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-sidebar {
+    position: static;
+  }
+
+  .info-list {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+}

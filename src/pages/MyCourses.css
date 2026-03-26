@@ -1,0 +1,236 @@
+.my-courses-page {
+  background: var(--bg-light);
+  min-height: calc(100vh - 64px);
+  padding: 2rem 1.5rem;
+}
+
+.my-courses-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 4rem;
+}
+
+.empty-state h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+}
+
+.empty-state p {
+  color: var(--text-muted);
+  max-width: 400px;
+  margin: 0;
+}
+
+/* Sections */
+.my-section {
+  margin-bottom: 2.5rem;
+}
+
+.my-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+.section-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.section-dot.certificate {
+  background: var(--gold);
+}
+
+.section-dot.degree {
+  background: var(--navy);
+}
+
+.my-programs-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Program Card */
+.my-program-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.my-program-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.my-program-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0.25rem 0 0.15rem;
+}
+
+.my-program-dept {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.my-program-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.view-btn {
+  padding: 0.4rem 0.9rem;
+  background: var(--navy);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.view-btn:hover {
+  background: var(--navy-dark);
+}
+
+.unenroll-btn {
+  padding: 0.4rem 0.9rem;
+  background: transparent;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.unenroll-btn:hover {
+  background: #fee2e2;
+}
+
+.my-program-meta {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+/* Course chips */
+.course-list-section h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.75rem;
+}
+
+.course-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.course-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.8rem;
+}
+
+.chip-code {
+  font-family: monospace;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.chip-title {
+  color: var(--text);
+}
+
+.more-chip {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Reuse btn styles */
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.15s;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--navy-dark);
+}
+
+.btn-primary:hover {
+  background: #e6c547;
+}
+
+/* Type pill */
+.type-pill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+.type-pill.certificate {
+  background: rgba(245, 196, 60, 0.15);
+  color: #8a6d00;
+}
+
+.type-pill.degree {
+  background: rgba(30, 58, 95, 0.1);
+  color: var(--navy);
+}

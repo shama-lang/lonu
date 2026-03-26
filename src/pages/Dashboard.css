@@ -1,0 +1,338 @@
+.dashboard-page {
+  background: var(--bg-light);
+  min-height: calc(100vh - 64px);
+  padding: 2rem 1.5rem;
+}
+
+.dashboard-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Welcome */
+.welcome-banner {
+  background: linear-gradient(135deg, var(--navy), #1a3a5c);
+  color: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-text h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-cross {
+  color: var(--gold);
+}
+
+.welcome-text p {
+  color: rgba(255, 255, 255, 0.75);
+  font-style: italic;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.student-id-badge {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Stats */
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.dash-stat-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.dash-stat-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.dash-stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.25rem;
+}
+
+/* Grid */
+.dash-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.dash-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.dash-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.dash-card-header h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+}
+
+.dash-link {
+  font-size: 0.85rem;
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dash-link:hover {
+  text-decoration: underline;
+}
+
+/* Programs List */
+.dash-program-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dash-program-list li {
+  border-bottom: 1px solid var(--border);
+}
+
+.dash-program-list li:last-child {
+  border-bottom: none;
+}
+
+.dash-program-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 0;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.9rem;
+  gap: 0.5rem;
+}
+
+.dash-program-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.dash-program-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* Type badges */
+.type-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.1rem;
+}
+
+.type-badge.certificate {
+  background: rgba(245, 196, 60, 0.15);
+  color: #8a6d00;
+}
+
+.type-badge.degree,
+.type-badge.Bachelor,
+.type-badge.Master {
+  background: rgba(30, 58, 95, 0.1);
+  color: var(--navy);
+}
+
+/* Grades */
+.dash-grades-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dash-grade-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.dash-grade-item:last-child {
+  border-bottom: none;
+}
+
+.grade-course-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.grade-code {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--navy);
+  font-family: monospace;
+}
+
+.grade-title {
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.grade-badge {
+  font-size: 0.95rem;
+  font-weight: 800;
+  min-width: 36px;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+}
+
+.grade-a {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.grade-b {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.grade-c {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+/* Quick Actions */
+.quick-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.quick-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1.5px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.quick-action:hover {
+  background: var(--bg-light);
+  border-color: var(--navy);
+  color: var(--navy);
+}
+
+.qa-icon {
+  font-size: 1.75rem;
+}
+
+/* Available */
+.dash-available-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dash-available-list li {
+  border-bottom: 1px solid var(--border);
+}
+
+.dash-available-list li:last-child {
+  border-bottom: none;
+}
+
+.dash-available-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.dash-available-item:hover {
+  color: var(--navy);
+}
+
+/* Empty */
+.dash-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.dash-empty p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .dash-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dash-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-banner {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
