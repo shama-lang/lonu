@@ -1,0 +1,201 @@
+.grades-page {
+  background: var(--bg-light);
+  min-height: calc(100vh - 64px);
+  padding: 2rem 1.5rem;
+}
+
+.grades-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Summary */
+.grades-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.summary-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.summary-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.25rem;
+}
+
+/* Semester */
+.semester-section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.semester-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: var(--navy);
+  color: #fff;
+}
+
+.semester-header h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.semester-summary {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.semester-summary strong {
+  color: var(--gold);
+}
+
+/* Table */
+.grades-table {
+  width: 100%;
+}
+
+.grades-table-header {
+  display: grid;
+  grid-template-columns: 80px 1fr 80px 80px 80px;
+  padding: 0.5rem 1.25rem;
+  background: #f8fafc;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  gap: 1rem;
+}
+
+.grades-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 80px 80px 80px;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.88rem;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+  gap: 1rem;
+}
+
+.grades-row:last-child {
+  border-bottom: none;
+}
+
+.grades-row:nth-child(even) {
+  background: #fafafa;
+}
+
+.g-code {
+  font-family: monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.g-title {
+  color: var(--text);
+}
+
+.g-credits,
+.g-points {
+  text-align: center;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.grade-badge {
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.grade-a {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.grade-b {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.grade-c {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.grade-d {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Footer */
+.transcript-footer {
+  background: var(--navy);
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.transcript-footer p {
+  margin: 0.25rem 0;
+}
+
+.transcript-note {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: normal;
+}
+
+/* Empty */
+.empty-state {
+  text-align: center;
+  padding: 4rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .grades-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grades-table-header,
+  .grades-row {
+    grid-template-columns: 70px 1fr 50px 60px 60px;
+    gap: 0.5rem;
+  }
+}
